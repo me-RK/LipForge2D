@@ -76,6 +76,24 @@ The installer will be generated in the `dist/` directory.
 
 ---
 
+## 📄 License
+
+LipForge 2D is licensed under the MIT License.
+
+This project uses Rhubarb Lip Sync.
+Please refer to the original Rhubarb license for its respective terms.
+
+## 📦 Third Party Software
+
+This application uses:
+
+**Rhubarb Lip Sync**
+[https://github.com/DanielSWolf/rhubarb-lip-sync](https://github.com/DanielSWolf/rhubarb-lip-sync)
+
+Used under its respective open-source license. Original license text can be found in `/third-party-licenses/rhubarb-license.txt`.
+
+---
+
 ## ❤️ Credits & Support
 
 Developed by **EmptyIdea**. 
@@ -83,9 +101,3 @@ Developed by **EmptyIdea**.
 If this tool helps your workflow, consider supporting the continued development:
 - [Patreon](https://www.patreon.com/c/emptyidea)
 - [Buy Me a Coffee](https://buymeacoffee.com/emptyidea)
-
----
-
-## ⚖️ License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details. Based on the original Rhubarb Lip Sync core by Daniel S. Wolf.
