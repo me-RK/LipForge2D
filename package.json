@@ -1,0 +1,66 @@
+{
+    "name": "lipforge-2d",
+    "description": "Open-source 2D lip sync video generator by EmptyIdea",
+    "author": "EmptyIdea",
+    "private": true,
+    "version": "0.0.1",
+    "type": "module",
+    "main": "electron/main.cjs",
+    "scripts": {
+        "dev": "concurrently \"npm run dev:frontend\" \"wait-on http://localhost:5173 && cross-env NODE_ENV=development electron electron/main.cjs\"",
+        "build": "vite build",
+        "dist": "npm run build && electron-builder"
+    },
+    "build": {
+        "appId": "com.emptyidea.lipforge2d",
+        "productName": "LipForge Pro",
+        "asar": true,
+        "files": [
+            "dist/**/*",
+            "electron/**/*",
+            "package.json"
+        ],
+        "extraResources": [
+            {
+                "from": "server",
+                "to": "server",
+                "filter": [
+                    "**/*"
+                ]
+            },
+            {
+                "from": "bin",
+                "to": "bin",
+                "filter": [
+                    "**/*"
+                ]
+            }
+        ],
+        "win": {
+            "target": "nsis",
+            "icon": "build/icon.ico",
+            "artifactName": "LipForge-2D-Setup-${version}.exe"
+        }
+    },
+    "dependencies": {
+        "@ffmpeg/ffmpeg": "^0.12.15",
+        "@ffmpeg/util": "^0.12.2",
+        "cors": "^2.8.6",
+        "express": "^5.2.1",
+        "lucide-react": "^0.400.0",
+        "multer": "^2.0.2",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+    },
+    "devDependencies": {
+        "@types/react": "^18.3.3",
+        "@types/react-dom": "^18.3.0",
+        "@vitejs/plugin-react": "^4.3.1",
+        "concurrently": "^9.2.1",
+        "cross-env": "^10.1.0",
+        "electron": "^40.5.0",
+        "electron-builder": "^26.8.1",
+        "vite": "^5.3.1",
+        "wait-on": "^9.0.4"
+    }
+}
