@@ -1,5 +1,9 @@
 # 🎙️ LipForge Pro
 
+<div align="center">
+  <img src="public/logo.png" alt="LipForge Logo" width="350" height="200">
+</div>
+
 **LipForge Pro** is a high-performance, studio-grade 2D lip-sync video generator. It leverages a custom neural phoneme engine to synchronize mouth shapes with speech tracks, producing high-fidelity MP4 outputs ready for professional content creation.
 
 ![License](https://img.shields.io/badge/license-MIT-green)
