@@ -8,6 +8,26 @@
 
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Version](https://img.shields.io/badge/version-0.0.1--alpha-blue)
+![Release](https://img.shields.io/github/v/release/me-RK/LipForge2D)
+
+---
+
+## 📥 Download
+
+👉 [**Download Latest Release**](https://github.com/me-RK/LipForge2D/releases/latest)
+
+---
+
+## 🛡️ File Verification (SHA256)
+
+For security and integrity, you can verify the downloaded installer using SHA256. 
+
+**Windows (PowerShell):**
+```powershell
+Get-FileHash .\LipForge-2D-Setup-0.0.1.exe -Algorithm SHA256
+```
+
+Compare the resulting hash with the one provided in the GitHub Release notes.
 
 ---
 
